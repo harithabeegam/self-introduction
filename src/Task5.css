@@ -1,0 +1,138 @@
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.task5 {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: #f4f7fb;
+}
+.form-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 35px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+.form-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.form-header h1 {
+  margin: 0 0 10px;
+  font-size: 30px;
+}
+.form-header h1 {
+  margin: 0 0 10px;
+  font-size: 30px;
+  color: black;
+}
+.form-header p {
+  margin: 0;
+  color: #908f9a;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.full-width {
+  grid-column: 1 / -1;
+}
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d5d9df;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  font-family: inherit;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #4f7cff;
+  box-shadow: 0 0 0 3px rgba(79, 124, 255, 0.1);
+}
+.form-group textarea {
+  resize: vertical;
+}
+.error {
+  margin-top: 6px;
+  color: #d93025;
+  font-size: 13px;
+}
+.success {
+  margin-top: 25px;
+  padding: 12px;
+  text-align: center;
+  background: #e7f7ed;
+  color: #18794e;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+.form-buttons button {
+  min-width: 130px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.submit-btn {
+  background: #315fdc;
+  color: white;
+}
+.reset-btn {
+  background: #e9edf3;
+  color: #333;
+}
+.form-buttons button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+@media (max-width: 700px) {
+  .task5 {
+    padding: 20px 12px;
+  }
+  .form-container {
+    padding: 25px 18px;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .full-width {
+    grid-column: auto;
+  }
+  .form-buttons {
+    flex-direction: column;
+  }
+  .form-buttons button {
+    width: 100%;
+  }
+}

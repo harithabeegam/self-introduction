@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.task4 {
+  min-height: 100vh;
+  padding: 30px 50px;
+  background-color: #f5f2ea;
+  color: #222;
+  transition: 0.3s ease;
+}
+.header {
+  max-width: 1000px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+.theme-button {
+  padding: 10px 18px;
+  background-color: transparent;
+  border: 1px solid #333;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.counter-card {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 45px 30px;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+.label {
+  margin: 0 0 15px;
+  color: #777;
+  font-size: 15px;
+}
+.counter-card h2 {
+  margin: 0 0 30px;
+  font-size: 48px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.buttons button {
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s ease;
+}
+.decrement {
+  background-color: #934c2d;
+  color: white;
+}
+.reset {
+  background-color: white;
+  color: #222;
+  border: 1px solid #333 !important;
+}
+.increment {
+  background-color: #287b68;
+  color: white;
+}
+.buttons button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+/* Dark Mode */
+.task4.dark {
+  background-color: #1e1e1e;
+  color: white;
+}
+.task4.dark .counter-card {
+  background-color: #2b2b2b;
+}
+.task4.dark .label {
+  color: #bbb;
+}
+.task4.dark .theme-button {
+  color: white;
+  border-color: white;
+}
+.task4.dark .reset {
+  background-color: #2b2b2b;
+  color: white;
+  border-color: white !important;
+}
+/* Responsive */
+@media (max-width: 600px) {
+  .task4 {
+    padding: 20px;
+  }
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .header h1 {
+    font-size: 24px;
+  }
+  .counter-card {
+    padding: 35px 20px;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .buttons button {
+    width: 100%;
+  }
+}

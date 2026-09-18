@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f1f8ec;
+}
+
+.task6 {
+  min-height: 100vh;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f8ec;
+}
+
+/* Main Chat Box */
+
+.chat-container {
+  width: 100%;
+  max-width: 770px;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Header */
+
+.chat-header {
+  padding: 28px 30px;
+  background-color: #82c95d;
+}
+
+.chat-header h1 {
+  margin: 0;
+  color: white;
+  font-size: 34px;
+}
+
+/* Message Area */
+
+.messages-section {
+  height: 445px;
+  padding: 50px 30px;
+  background-color: #fbfdf9;
+}
+
+.welcome-message {
+  text-align: center;
+}
+
+.welcome-message h2 {
+  margin: 0 0 12px;
+  color: #82c95d;
+  font-size: 26px;
+}
+
+.welcome-message p {
+  margin: 0;
+  color: #71808c;
+  font-size: 17px;
+}
+
+/* Sent Messages */
+
+.message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.message {
+  padding: 13px 16px;
+  background-color: #e4f4dc;
+  border-left: 4px solid #82c95d;
+  border-radius: 7px;
+  color: #344238;
+  font-size: 16px;
+}
+
+/* Bottom Input Area */
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  background-color: white;
+  border-top: 1px solid #e5e5e5;
+}
+
+.chat-input label {
+  color: #303030;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.chat-input input {
+  flex: 1;
+  height: 57px;
+  padding: 14px 15px;
+  border: 1px solid #d6dce0;
+  border-radius: 7px;
+  font-size: 16px;
+  outline: none;
+}
+
+.chat-input input:focus {
+  border-color: #82c95d;
+}
+
+.chat-input button {
+  height: 57px;
+  padding: 0 22px;
+  background-color: #82c95d;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #70b94f;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .task6 {
+    padding: 20px 12px;
+  }
+
+  .messages-section {
+    height: 350px;
+  }
+
+  .chat-input {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .chat-input label {
+    font-size: 16px;
+  }
+
+  .chat-input input,
+  .chat-input button {
+    width: 100%;
+  }
+}

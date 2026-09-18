@@ -1,0 +1,64 @@
+.user-card {
+  --accent: #2f6f5e;
+  position: relative;
+  background: #fffdf9;
+  border: 1px solid #dedad0;
+  border-radius: 4px;
+  padding: 28px 24px 22px;
+  box-shadow: 4px 4px 0 rgba(31, 42, 36, 0.06);
+}
+
+.user-card__tab {
+  position: absolute;
+  top: -13px;
+  left: 20px;
+  background: var(--accent);
+  color: #fffdf9;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  padding: 4px 12px;
+  border-radius: 3px;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+.user-card__name {
+  font-family: Georgia, "Iowan Old Style", serif;
+  font-size: 22px;
+  margin: 12px 0 2px;
+  color: #1f2a24;
+}
+
+.user-card__meta {
+  font-size: 13px;
+  color: #6b6455;
+  margin: 0 0 18px;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+.user-card__details {
+  margin: 0;
+  border-top: 1px solid #ece8dd;
+  padding-top: 14px;
+}
+
+.user-card__row {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+.user-card__row dt {
+  font-size: 12px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.user-card__row dd {
+  margin: 0;
+  font-size: 13.5px;
+  color: #33362f;
+  line-height: 1.4;
+  word-break: break-word;
+}

@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.game-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 30px;
+  background: linear-gradient(135deg, #dceaff, #eeeaff);
+}
+
+.game-card {
+  width: 375px;
+  min-height: 425px;
+  padding: 28px 22px;
+  background-color: white;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.game-card h1 {
+  margin: 0 0 10px;
+  color: #20b253;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.game-card h2 {
+  margin: 0 0 14px;
+  padding: 7px;
+  border: 1px solid #c9ddf8;
+  border-radius: 6px;
+  background-color: #f1f6fd;
+  color: #159b29;
+  font-size: 15px;
+}
+
+/* Game Board */
+
+.board {
+  width: 238px;
+  margin: 0 auto;
+  padding: 7px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7px;
+  background-color: #d9e9ff;
+  border-radius: 11px;
+}
+
+.board button {
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 7px;
+  background-color: white;
+  color: #129e6b;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.board button:hover {
+  background-color: #f1f6ff;
+  transform: scale(1.03);
+}
+
+/* Reset Button */
+
+.reset-button {
+  margin-top: 20px;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #18c071;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background-color: #0ea16e;
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+  .game-container {
+    padding: 20px 12px;
+  }
+
+  .game-card {
+    width: 100%;
+    max-width: 375px;
+  }
+}

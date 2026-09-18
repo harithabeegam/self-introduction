@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Main Page */
+
+.task8 {
+  min-height: 100vh;
+  padding: 45px 20px;
+  transition: 0.3s ease;
+}
+
+/* Light Theme */
+
+.light {
+  background-color: #f4f8fc;
+  color: #222;
+}
+
+/* Dark Theme */
+
+.dark {
+  background-color: #181b20;
+  color: white;
+}
+
+/* Main Heading */
+
+.task8 h1 {
+  text-align: center;
+  margin: 0 0 35px;
+  font-size: 38px;
+  font-weight: bold;
+  color: #1769aa;
+}
+
+/* Common Component Box */
+
+.component-box {
+  max-width: 700px;
+  margin: 0 auto 18px;
+  padding: 18px 25px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.component-box h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Parent Component */
+
+.parent-box {
+  background-color: #e3f2fd;
+}
+
+.parent-box h2 {
+  color: #1769aa;
+}
+
+/* Child Component */
+
+.child-box {
+  background-color: #e0f7f5;
+}
+
+.child-box h2 {
+  color: #168b8b;
+}
+
+/* GrandChild Component */
+
+.grand-child {
+  background-color: #f0e8ff;
+  padding: 28px;
+}
+
+.grand-child h2 {
+  color: #7042a5;
+}
+
+/* Dark Theme Component Boxes */
+
+.dark .parent-box {
+  background-color: #263b52;
+}
+
+.dark .parent-box h2 {
+  color: #6db7f2;
+}
+
+.dark .child-box {
+  background-color: #214443;
+}
+
+.dark .child-box h2 {
+  color: #62d1cb;
+}
+
+.dark .grand-child {
+  background-color: #382d4b;
+}
+
+.dark .grand-child h2 {
+  color: #c49aff;
+}
+
+/* Theme Text */
+
+.theme-text {
+  margin: 20px 0;
+  font-size: 18px;
+  color: #222;
+}
+
+.theme-text strong {
+  color: #1769aa;
+}
+
+.dark .theme-text {
+  color: white;
+}
+
+.dark .theme-text strong {
+  color: #62d1cb;
+}
+
+/* Theme Button */
+
+.theme-button {
+  padding: 13px 25px;
+  border: none;
+  border-radius: 8px;
+  background-color: #756900;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.theme-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* User Information Card */
+
+.user-card {
+  max-width: 600px;
+  margin: 28px auto 0;
+  padding: 25px;
+  border: 1px solid #d5e9f2;
+  border-radius: 12px;
+  background-color: #f5fbfd;
+  text-align: left;
+}
+
+.user-card h3 {
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: 24px;
+  color: #1769aa;
+}
+
+.user-card p {
+  margin: 14px 0;
+  font-size: 17px;
+  color: #222;
+}
+
+.user-card strong {
+  display: inline-block;
+  width: 75px;
+  color: #1769aa;
+}
+
+/* Dark Theme User Card */
+
+.dark .user-card {
+  background-color: #20242a;
+  border-color: #3b4650;
+}
+
+.dark .user-card h3 {
+  color: #62d1cb;
+}
+
+.dark .user-card p {
+  color: white;
+}
+
+.dark .user-card strong {
+  color: #62d1cb;
+}
+/* Responsive Design */
+@media (max-width: 600px) {
+  .task8 {
+    padding: 30px 15px;
+  }
+  .task8 h1 {
+    font-size: 28px;
+  }
+  .component-box {
+    padding: 18px;
+  }
+  .component-box h2 {
+    font-size: 20px;
+  }
+  .grand-child {
+    padding: 22px;
+  }
+  .theme-button {
+    width: 100%;
+  }
+  .user-card {
+    padding: 20px;
+  }
+  .user-card p {
+    font-size: 15px;
+  }
+}

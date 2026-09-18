@@ -1,0 +1,127 @@
+.intro-card {
+  width: 100%;
+  max-width: 520px;
+  background: #223328;
+  border: 1px solid #33472f;
+  border-radius: 18px;
+  padding: 2.5rem 2.25rem;
+  box-shadow: 0 24px 48px -24px rgba(0, 0, 0, 0.5);
+}
+
+.intro-header {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.intro-avatar {
+  flex-shrink: 0;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: #e8b34d;
+  color: #1b2b22;
+  font-family: 'Fraunces', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-name {
+  margin: 0;
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: 1.9rem;
+  line-height: 1.15;
+  color: #f3efe6;
+}
+
+.intro-role {
+  margin: 0.2rem 0 0;
+  color: #9bafa0;
+  font-size: 0.95rem;
+}
+
+.intro-divider {
+  height: 1px;
+  background: #33472f;
+  margin: 1.75rem 0;
+}
+
+.intro-section + .intro-section {
+  margin-top: 1.35rem;
+}
+
+.intro-section h2 {
+  margin: 0 0 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #e8b34d;
+}
+
+.intro-section p {
+  margin: 0;
+  color: #d9dcd2;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  max-width: 60ch;
+}
+
+.intro-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.intro-tags li {
+  font-size: 0.85rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: #2c4032;
+  border: 1px solid #3d5540;
+  color: #f3efe6;
+}
+
+.intro-tags--muted li {
+  background: transparent;
+  border-color: #3d5540;
+  color: #9bafa0;
+}
+
+.intro-goal {
+  background: #1b2b22;
+  border: 1px solid #33472f;
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem;
+}
+
+.intro-goal-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #e8b34d;
+  margin-bottom: 0.35rem;
+}
+
+.intro-goal p {
+  margin: 0;
+  color: #f3efe6;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 480px) {
+  .intro-card {
+    padding: 1.75rem 1.4rem;
+    border-radius: 14px;
+  }
+
+  .intro-name {
+    font-size: 1.55rem;
+  }
+}
